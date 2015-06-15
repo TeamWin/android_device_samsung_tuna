@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
 #	keystore.tuna
 
 PRODUCT_COPY_FILES += \
+	device/samsung/tuna/twrp.fstab:recovery/root/etc/twrp.fstab \
+	device/samsung/tuna/kernel:kernel
+
+PRODUCT_COPY_FILES += \
 	device/samsung/tuna/init.tuna.rc:root/init.tuna.rc \
 	device/samsung/tuna/init.tuna.usb.rc:root/init.tuna.usb.rc \
 	device/samsung/tuna/fstab.tuna:root/fstab.tuna \
