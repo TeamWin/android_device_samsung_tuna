@@ -163,12 +163,7 @@ PRODUCT_COPY_FILES += \
 
 # Low-RAM optimizations
 ADDITIONAL_BUILD_PROPERTIES += \
-	config.disable_atlas=true \
 	dalvik.vm.dex2oat-flags=--no-watch-dog
-
-# I/O Scheduler
-PRODUCT_PROPERTY_OVERRIDES += \
-	sys.io.scheduler=bfq
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072 \

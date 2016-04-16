@@ -21,13 +21,6 @@ DEVICE_FOLDER := device/samsung/tuna
 
 PRODUCT_VENDOR_KERNEL_HEADERS += $(DEVICE_FOLDER)/kernel-headers
 
-# CM
-BOARD_HARDWARE_CLASS += \
-	$(DEVICE_FOLDER)/cmhw \
-	$(OMAP4_NEXT_FOLDER)/cmhw
-
-BACKLIGHT_PATH := "/sys/class/backlight/s6e8aa0/brightness"
-
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/tuna/BoardConfigVendor.mk
 
@@ -43,7 +36,7 @@ TARGET_BOARD_OMAP_CPU := 4460
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.selinux=permissive
-TARGET_KERNEL_CONFIG := cyanogenmod_tuna_defconfig
+TARGET_KERNEL_CONFIG := tuna_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/tuna
 
 # External SGX Module
@@ -110,6 +103,4 @@ BOARD_SEPOLICY_DIRS += \
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_FSTAB = $(DEVICE_FOLDER)/rootdir/fstab.tuna
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
-BOARD_RECOVERY_SWIPE := true
-BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
