@@ -38,6 +38,7 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=$(TARGET_BOOTLOADER_BOARD_NAME) androidboot.selinux=permissive
 TARGET_KERNEL_CONFIG := tuna_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/tuna
+KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(strip $(HOST_OS))-x86/arm/arm-eabi-4.7/bin/"
 
 # External SGX Module
 SGX_MODULES:
