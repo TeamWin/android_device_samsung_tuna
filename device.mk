@@ -77,7 +77,8 @@ PRODUCT_COPY_FILES += \
 
 # Fstab
 PRODUCT_COPY_FILES += \
-	$(DEVICE_FOLDER)/rootdir/fstab.tuna:root/fstab.tuna
+	$(DEVICE_FOLDER)/rootdir/fstab.tuna:root/fstab.tuna \
+	$(DEVICE_FOLDER)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # GPS
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
