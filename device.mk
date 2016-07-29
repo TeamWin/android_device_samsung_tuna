@@ -107,7 +107,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-	NfcNxp \
+	Nfc \
 	Tag
 
 # Key maps
