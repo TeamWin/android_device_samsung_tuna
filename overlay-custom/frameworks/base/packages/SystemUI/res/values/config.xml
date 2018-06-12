@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Control whether Night display is available. This should only be enabled on devices
+         with HWC 2.0 or higher. -->
+    <bool name="config_nightDisplayAvailable">false</bool>
+
+</resources>
