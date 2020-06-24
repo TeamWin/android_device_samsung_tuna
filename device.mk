@@ -100,7 +100,7 @@ PRODUCT_COPY_FILES += \
 	$(DEVICE_FOLDER)/rootdir/fstab.tuna:root/fstab.tuna
 
 # GPS
-$(call inherit-product, device/common/gps/gps_us_supl.mk)
+$(call inherit-product-if-exists, device/common/gps/gps_us_supl.mk)
 # Legacy GPS
 PRODUCT_PACKAGES += \
     gps.tuna
